@@ -70,6 +70,7 @@ const actualizarEvento = async (req, res = response) => {
 
 
     const nuevoEvento = {
+      ...req.body,
       user: uid
     }
 
